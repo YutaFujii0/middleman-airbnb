@@ -1,0 +1,14 @@
+---
+title: Le Wagon - Middleman
+---
+
+<h2 class="text-center">This template is built with  by</h2>
+<ul class="list-inline text-center">
+  <% data.users.each do |user| %>
+    <li>
+      <%= image_tag "https://kitt.lewagon.com/placeholder/users/#{user.github_nickname}", class: "img-circle avatar-lg" %>
+      <h3><%= user.name.capitalize %></h3>
+      <h4><a href="#"><i class="fab fa-github"></i><%= user.github_nickname %></h4></a>
+    </li>
+  <% end %>
+</ul>
